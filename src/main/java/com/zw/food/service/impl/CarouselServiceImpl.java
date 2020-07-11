@@ -3,13 +3,15 @@ package com.zw.food.service.impl;
 import com.zw.food.dao.CarouselRepository;
 import com.zw.food.daomain.Carousel;
 import com.zw.food.service.CarouselService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.List;
 
+@Service
 public class CarouselServiceImpl implements CarouselService {
 
-    @Resource
+    @Autowired
     private CarouselRepository carouselRepository;
 
     @Override
